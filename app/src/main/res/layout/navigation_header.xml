@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/health_photo"
+    android:backgroundTint="#6F000000"
+    android:backgroundTintMode="src_atop"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_account_circle_black_24dp"
+        android:tint="#fff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simón Hernández"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="shernandez97@hotmail.com"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>
