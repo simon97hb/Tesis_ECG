@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "472895231330",
+    "firebase_url": "https://tesis-ecg.firebaseio.com",
+    "project_id": "tesis-ecg",
+    "storage_bucket": "tesis-ecg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472895231330:android:a1a102302675a671",
+        "android_client_info": {
+          "package_name": "com.example.toshibac45.tesis_ecg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472895231330-tj26qnnoh1717lr2bl83kielav6comoo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.toshibac45.tesis_ecg",
+            "certificate_hash": "adcf27676e1636ed9bfdae5e85140ebc9688caa1"
+          }
+        },
+        {
+          "client_id": "472895231330-2lu7qepj7f10eukfavftqtlqvsurpr7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-rEdFWlohBgn9ZvRXZrJmukCPqBY1nIA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472895231330-2lu7qepj7f10eukfavftqtlqvsurpr7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

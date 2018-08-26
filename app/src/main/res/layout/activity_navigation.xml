@@ -7,6 +7,103 @@
     android:layout_height="match_parent"
     tools:context=".Navigation">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/ecg_image"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1.5"
+           android:orientation="vertical">
+
+
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:background="@android:color/transparent">
+               <LinearLayout
+                   android:id="@+id/heart_rate_layout"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_centerHorizontal="true">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="0"
+                       android:textSize="72sp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="78"
+                       android:textColor="@color/colorPrimary"
+                       android:textSize="72sp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="bpm"
+                       android:textSize="18sp"/>
+               </LinearLayout>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Normal"
+                   android:layout_below="@+id/heart_rate_layout"
+                   android:layout_centerHorizontal="true"
+                   android:textColor="@color/colorAccent"/>
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1.5">
+
+               <com.gigamole.library.PulseView
+
+                   android:id="@+id/heart_pulse_view"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_centerHorizontal="true"
+                   android:layout_centerVertical="true"
+                   app:pv_alpha="70"
+                   app:pv_icon="@drawable/heart_icon"
+                   app:pv_color="@color/colorPrimary"
+                   app:pv_icon_height="70dp"
+                   app:pv_icon_width="70dp"
+                   app:pv_measure="width"
+                   app:pv_spawn_period="500"
+                   app:pv_interpolator="@android:anim/linear_interpolator"
+                   />
+
+               <Button
+                   android:id="@+id/toggle_btn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   style="@style/Base.Widget.AppCompat.Button.Borderless"
+                   android:layout_centerVertical="true"
+                   android:layout_centerHorizontal="true"
+                   android:background="@android:color/transparent"
+                   />
+
+           </RelativeLayout>
+
+
+       </LinearLayout>
+
+
+
+    </LinearLayout>
+
 
     <android.support.design.widget.NavigationView
         app:headerLayout="@layout/navigation_header"
@@ -16,6 +113,9 @@
         android:layout_gravity="start">
 
 
+
     </android.support.design.widget.NavigationView>
+
+
 
 </android.support.v4.widget.DrawerLayout>
